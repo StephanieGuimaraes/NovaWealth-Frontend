@@ -1,8 +1,8 @@
 ---
-title: "Meu segundo artigo"
+title: "Meu primeiro artigo"
 date: "2024-02-01"
-summary: "Esse é o meu segundo post usando markdown dentro do Next.js!"
-image: "/images/blog/default.jpg"
+summary: "Esse é o meu primeiro post usando markdown dentro do Next.js!"
+image: "/articlesImages/WhatIsBlockchain.png"
 ---
 
 Olá! 👋  
