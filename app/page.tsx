@@ -1,17 +1,3 @@
-// import React from 'react'
-
-// const page = () => {
-//   return (
-//     <div className='bg-[#0A1226] p-4 rounded-xl border border-[#1A253A]'>
-//       <h1 className='text-2xl font-semibold leading-tight text-[#F2F4F7]'>NovaWealth</h1>
-//       <p>Welcome to NovaWealth!</p>
-//     </div>
-//   )
-// }
-
-// export default page
-
-// app/page.tsx
 export default function Home() {
   return (
     <section className="max-w-5xl mx-auto py-24 px-4">
