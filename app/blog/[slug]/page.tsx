@@ -1,6 +1,7 @@
 import { getAllPosts, getPostBySlug } from "@/lib/posts";
 import { remark } from "remark";
 import html from "remark-html";
+import Image from "next/image";
 
 export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -11,15 +12,33 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     .process(post.content);
 
   const contentHtml = processedContent.toString();
+  console.log("Rendering post:", post);
 
   return (
-    <article className="p-8 max-w-3xl mx-auto">
-      <h1 className="text-3xl font-bold mb-2">{post.title}</h1>
-      <p className="text-sm text-gray-500 mb-6">{post.date}</p>
-      <div
-        className="prose"
-        dangerouslySetInnerHTML={{ __html: contentHtml }}
-      />
+    <article className="p-8 max-w-4xl mx-auto">
+      <div className="prose prose-lg max-w-none">
+        {post.image && (
+          <div className="mb-8">
+            <Image
+              src={post.image}
+              alt={post.title}
+              width={800}
+              height={400}
+              className="w-full h-auto rounded-lg"
+              priority
+            />
+          </div>
+        )}
+      </div>
+      
+      <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
+      <p className="text-sm text-gray-500 mb-8">{post.date}</p>
+      
+      <div className="prose prose-lg max-w-none">
+        <div
+          dangerouslySetInnerHTML={{ __html: contentHtml }}
+        />
+      </div>
     </article>
   );
 }
