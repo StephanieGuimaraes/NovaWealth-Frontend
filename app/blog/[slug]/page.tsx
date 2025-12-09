@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 
-const STRAPI_URL = "http://localhost:1337";
+//const STRAPI_URL = "http://localhost:1337";
+const STRAPI_URL = process.env.NEXT_PUBLIC_API_URL;
 
 // Função para converter Rich Text do Strapi para HTML
 function richTextToHtml(blocks: any[]): string {

@@ -1,6 +1,7 @@
 import ArticleCard from "@/components/ArticleCard";
 
-const STRAPI_URL = "http://localhost:1337";
+//const STRAPI_URL = "http://localhost:1337";
+const STRAPI_URL = process.env.NEXT_PUBLIC_API_URL;
 
 async function getArticles() {
   const res = await fetch(
