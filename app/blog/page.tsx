@@ -1,52 +1,24 @@
-import ArticleCard from "@/components/ArticleCard";
+import Link from "next/link";
+import { getAllPosts } from "@/lib/posts";
 
-//const STRAPI_URL = "http://localhost:1337";
-const STRAPI_URL = process.env.NEXT_PUBLIC_API_URL;
+export default function BlogPage() {
+  const posts = getAllPosts();
 
-async function getArticles() {
-  const res = await fetch(
-    `${STRAPI_URL}/api/articles?populate=*`,
-    {
-      next: { revalidate: 60 }, // revalida a cada 1 minuto
-    }
-  );
-
-  const data = await res.json();
-  console.log("Fetch: ", data);
-  return data.data;
-}
-
-export default async function BlogPage() {
-  const articles = await getArticles();
-console.log("Fetch: ", articles);
   return (
-    <div className="max-w-5xl mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-6">Articles</h1>
+    <main className="p-8">
+      <h1 className="text-3xl font-bold mb-6">Blog</h1>
 
-      {articles.length === 0 && (
-        <p className="text-gray-600">Nenhum artigo encontrado.</p>
-      )}
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {articles.map((article: any) => {
-          //const attrs = article.attributes;
-          console.log("Article Attributes: ", article.summary);
-        //   const cover = attrs.cover?.data?.attributes?.url
-        //     ? `${STRAPI_URL}${attrs.cover.data.attributes.url}`
-        //     : undefined;
-
-          return (
-            <ArticleCard
-              key={article.id}
-              title={article.title}
-              summary={article.summary}
-              publishedAt={article.publishedAt}
-              cover={article.coverImage.url ? `${STRAPI_URL}${article.coverImage.url}` : undefined}
-              slug={article.slug}
-            />
-          );
-        })}
+      <div className="space-y-6">
+        {posts.map(post => (
+          <Link key={post.slug} href={`/blog/${post.slug}`}>
+            <div className="p-4 border rounded cursor-pointer hover:bg-gray-50">
+              <h2 className="text-xl font-semibold">{post.title}</h2>
+              <p className="text-sm text-gray-600">{post.summary}</p>
+              <span className="text-xs text-gray-400">{post.date}</span>
+            </div>
+          </Link>
+        ))}
       </div>
-    </div>
+    </main>
   );
 }
