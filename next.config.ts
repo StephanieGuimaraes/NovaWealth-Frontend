@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  output: 'export',
   devIndicators: {
     buildActivity: false,
     appIsrStatus: false,
@@ -10,6 +11,7 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV === 'production',
   },
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'http',
