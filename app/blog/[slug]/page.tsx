@@ -1,6 +1,7 @@
 import { getAllPosts, getPostBySlug } from "@/lib/posts";
 import { remark } from "remark";
 import html from "remark-html";
+import remarkGfm from "remark-gfm";
 import Image from "next/image";
 
 export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -8,6 +9,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   const post = getPostBySlug(slug);
 
   const processedContent = await remark()
+    .use(remarkGfm)
     .use(html)
     .process(post.content);
 
