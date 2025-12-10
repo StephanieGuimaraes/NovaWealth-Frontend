@@ -1,6 +1,6 @@
 ---
 title: "Crypto scams surge in 2025: how to protect your investments"
-date: "2025-12-09"
+date: "December 9, 2025"
 summary: "As adoption grows, criminals intensify their attacks. Learn the main threats and how to stay safe."
 image: "/articlesImages/GolpesComCriptomoedas3.png"
 ---
@@ -20,10 +20,7 @@ Experts highlight three types of fraud as the most frequent today:
 
 ### AI-powered attacks
 
-A worrying trend in 2025 is the use of **AI to clone voices and digital identities**.  
-Scammers impersonate relatives or crypto exchange employees requesting urgent transfers.
-
-These cases increased **59%** on platforms using stablecoins.
+A worrying trend in 2025 is the use of **AI to clone voices and digital identities**. Scammers impersonate relatives or crypto exchange employees requesting urgent transfers. These cases increased **59%** on platforms using stablecoins.
 
 ### How to protect yourself
 
@@ -36,8 +33,7 @@ Here are some key recommendations for crypto investors:
 - Enable alerts for every transaction
 - Keep your devices updated
 
-Security experts emphasize that the **seed phrase** must be stored offline — preferably handwritten in a secure place.  
-Losing access to it means **losing all your crypto**, with no recovery possible.
+Security experts emphasize that the **seed phrase** must be stored offline — preferably handwritten in a secure place. Losing access to it means **losing all your crypto**, with no recovery possible.
 
 ### Regulations are evolving, but challenges remain
 
