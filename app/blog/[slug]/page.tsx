@@ -38,14 +38,8 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             month: 'long',
             day: 'numeric',
             year: 'numeric'
-          })} at {new Date().toLocaleTimeString('en-US', { 
-            hour: '2-digit', 
-            minute: '2-digit',
-            hour12: true
           })}
         </time>
-        <span className="hidden md:inline">•</span>
-        <span>Updated recently</span>
       </div>
 
       {/* Main Image */}
