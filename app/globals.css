@@ -88,6 +88,50 @@ div[style*="position: fixed"][style*="bottom"][style*="border-radius"] {
   background-color: #e5e7eb !important; /* gray-200 */
 }
 
+/* Citações (blockquotes) com linha azul vertical */
+.prose blockquote {
+  border-left: 4px solid #2563eb !important; /* blue-600 */
+  padding-left: 1rem !important;
+  margin: 1.5rem 0 !important;
+  background: transparent !important;
+  font-style: italic !important;
+  color: #374151 !important; /* gray-700 */
+}
+
+.prose blockquote p {
+  margin: 0 !important;
+  font-weight: 500 !important;
+  line-height: 1.6 !important;
+}
+
+/* Estilização das tabelas */
+.prose table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+  margin: 1.5rem 0 !important;
+}
+
+.prose table th,
+.prose table td {
+  border: 1px solid #d1d5db !important; /* gray-300 */
+  padding: 0.75rem !important;
+  text-align: left !important;
+}
+
+.prose table th {
+  background-color: #f9fafb !important; /* gray-50 */
+  font-weight: 600 !important;
+  color: #374151 !important; /* gray-700 */
+}
+
+.prose table td {
+  color: #4b5563 !important; /* gray-600 */
+}
+
+.prose table tr:nth-child(even) {
+  background-color: #f3f4f6 !important; /* gray-100 */
+}
+
 /* Cores para modo escuro */
 @media (prefers-color-scheme: dark) {
   /* Título principal do artigo */
@@ -110,5 +154,30 @@ div[style*="position: fixed"][style*="bottom"][style*="border-radius"] {
 
   .prose hr {
     background-color: #4b5563 !important; /* gray-600 */
+  }
+
+  /* Citações no modo escuro */
+  .prose blockquote {
+    border-left-color: #3b82f6 !important; /* blue-500 - um pouco mais claro no escuro */
+    color: #d1d5db !important; /* gray-300 */
+  }
+
+  /* Tabelas no modo escuro */
+  .prose table th,
+  .prose table td {
+    border-color: #4b5563 !important; /* gray-600 */
+  }
+
+  .prose table th {
+    background-color: #374151 !important; /* gray-700 */
+    color: #f9fafb !important; /* gray-50 */
+  }
+
+  .prose table td {
+    color: #c2c2c2 !important; /* gray-300 */
+  }
+
+  .prose table tr:nth-child(even) {
+    background-color: #1f2937 !important; /* gray-800 */
   }
 }
