@@ -17,10 +17,10 @@ export default function Header() {
         </Link>
 
         <nav className="flex items-center gap-6 text-sm">
-          <Link href="/blog" className="text-[#D9DEE7] hover:text-[#F2F4F7] transition">
+          <Link href="/blog/" className="text-[#D9DEE7] hover:text-[#F2F4F7] transition">
             Blog
           </Link>
-          <Link href="/About" className="text-[#D9DEE7] hover:text-[#F2F4F7] transition">
+          <Link href="/About/" className="text-[#D9DEE7] hover:text-[#F2F4F7] transition">
             About
           </Link>
         </nav>
