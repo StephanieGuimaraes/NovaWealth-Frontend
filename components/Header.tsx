@@ -10,8 +10,8 @@ export default function Header() {
           <Image
             src="/IconLogo.png"
             alt="NovaWealth logo"
-            width={40}
-            height={40}
+            width={30}
+            height={30}
           />
           <span className="text-xl font-bold leading-tight text-[#F2F4F7]">NovaWealth</span>
         </Link>
