@@ -17,18 +17,18 @@ At the same time, investors are positioning ahead of key U.S. employment data, w
 
 Below is an overview of the ten largest cryptocurrencies by market capitalization, based on public data from major market aggregators at the time of writing.
 
-| Rank | Cryptocurrency | Price (USD) | 24h Change |
-|------|----------------|-------------|------------|
-| 1 | Bitcoin (BTC) | ~$85,645 | — |
-| 2 | Ethereum (ETH) | ~$2,936 | — |
-| 3 | Tether (USDT) | ~$1.00 | — |
-| 4 | BNB (BNB) | ~$854 | — |
-| 5 | XRP (XRP) | ~$1.86 | — |
-| 6 | Solana (SOL) | ~$132 | — |
-| 7 | Dogecoin (DOGE) | ~$0.136 | — |
-| 8 | Litecoin (LTC) | ~$80.50 | — |
-| 9 | Loopring (LRC) | ~$0.063 | — |
-|10 | Sui (SUI) | ~$1.56 | — |
+| Rank | Cryptocurrency | Price (USD) |
+|------|----------------|-------------|
+| 1 | Bitcoin (BTC) | ~$85,645 |
+| 2 | Ethereum (ETH) | ~$2,936 |
+| 3 | Tether (USDT) | ~$1.00 |
+| 4 | BNB (BNB) | ~$854 |
+| 5 | XRP (XRP) | ~$1.86 |
+| 6 | Solana (SOL) | ~$132 |
+| 7 | Dogecoin (DOGE) | ~$0.136 |
+| 8 | Litecoin (LTC) | ~$80.50 |
+| 9 | Loopring (LRC) | ~$0.063 |
+|10 | Sui (SUI) | ~$1.56 |
 
 > *Prices are indicative and may vary slightly across exchanges.*
 
