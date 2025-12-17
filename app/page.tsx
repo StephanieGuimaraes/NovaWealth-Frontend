@@ -150,7 +150,7 @@ export default function Home() {
 
         {/* Link para ver todos os artigos */}
         {sortedPosts.length > 3 && (
-          <div className="text-center pt-4">
+          <div className="text-center pt-12">
             <Link 
               href="/blog" 
               className="inline-flex items-center px-6 py-3 bg-[#0A1226] text-white rounded-lg hover:bg-[#12224f] transition-colors font-medium"
